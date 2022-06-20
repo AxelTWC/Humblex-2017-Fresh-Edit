@@ -1,0 +1,10 @@
+prefix: '&c&lYT &8| '
+runcommand-youtube: '&7To get the rank you will need & b300 & e subs + good videos
+  for the server if you meet the requirements place &b / ConfirmYT'
+runcommand-confirmyt: '&7To get the rank send your application to https://humblex.enjin.com/forum/m/38631728/viewforum/7438814'
+no-permissions: '&7Sorry you aint having any permissions'
+no-execute-this-console: '&7This command is not available &7to the console.'
+runcommand-advantages: '&7Ventages &b&lVIP &c + &8 / &c & lTITAN &7.'
+message-launch-firework: '&eFirework Launched!'
+message-on-join: '&c&lYT &f%player% &7has entered.'
+chat-yt: '&9&lChatYT &8| &e%player% &8| &7%message%.'

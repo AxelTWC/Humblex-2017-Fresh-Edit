@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+&a&m&l--------------------------------------------
+
+                       &c&liProxyClient
+
+  &e                    Bienvenido
+  &eEs Nuestra Manera De Protegerte Tus Datos Y TU Cuenta
+  &e
+  &eUsa: &f/login {contraseña} &eSi Ya Estas Registrado
+    &eSi No Lo Estas Usa: &f/register {contraseña} {contraseña}
+
+&a&m&l--------------------------------------------

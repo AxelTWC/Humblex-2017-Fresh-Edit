@@ -1,0 +1,263 @@
+script options:
+	$ use permissions
+	
+Options:
+ 
+ launch height: 0.4
+ launch speed: 0.5
+ sound: random.bow
+  lang: en_US
+ pitch: 1
+ volume: 0.5
+on join:
+	loop all players:
+		reveal loop-player to player
+	set slot 1 of player to light green dye named "&5&lPlayer Visibility - &aON"
+	
+on rightclick with light green dye:
+	cancel event
+	loop all players:
+		hide loop-player to player
+	wait 0.5 ticks
+	set tool of player to gray dye named "&5&lPlayer Visibility - &cOFF"
+	
+on rightclick with gray dye:
+	cancel event
+	loop all players:
+		reveal loop-player to player
+	wait 0.5 ticks
+	set tool of player to light green dye named "&5&lPlayer Visibility - &aON"
+								
+on join:
+	clear player's inventory
+	set slot 0 of player to clock named "&2&lNavigation" with lore "&aRight click with this item||&ain hand to join a server."
+	set slot 1 of player to light green dye named "&5&lPlayer Visibility - &aON"
+	set slot 8 of player to ender chest named "&a&lCosmetics &c&lV4" with lore "&aRight click with this item||&ain hand to to see our||&aserver cosmetics."
+
+on left click with a clock:
+	if name of player's tool is "&2&lNavigation":
+		cancel event
+		make player execute command "/navigation"
+		
+on right click with clock:
+	if name of player's tool is "&2&lNavigation":
+		cancel event
+		make player execute command "/navigation"
+		
+command /no:
+	trigger:
+		send "&cThis is currently being worked on!"
+		
+command /navigation:
+	trigger:
+		wait 1 tick
+		open chest with 6 rows named "&6&lChoose a game" to player
+		format slot 10 of player with water bucket named "&6&lArena PvP" with lore "&7Competitive arena based fighting||&7with ranked/unranked matches including||&71v1,2v2, & 3v3,party ffa's,||&7party duels, red rovers and more!|| ||&e %{players.practice}% players online|| ||&aClick to connect to lobby" to close then run [make player execute command "/warp arenapvp"]
+		format slot 12 of player with apple named "&9&lMini UHC" with lore "&7Smaller UHC's hosted non-stop||&7with up to 32 players,||&7Free-For-All and Teams of 2||&7and random gamemodes!|| ||&cOFFLINE|| ||&aClick to select server" to close then run [make player execute command "/no"]
+		format slot 14 of player with fishing rod named "&9&lSG 6" with lore "&724 players but only 1 survivor.||&7Collect items, fight others||&7and be the last person/team alive.|| ||&e0 players online|| ||&aClick to select server" to close then run [make player execute command "/warp ffa"]
+		format slot 16 of player with golden apple of unbreaking 10 named "&a&lHosted UHC" with lore "&7No natural regen, closing border,||&7different gamemodes!Games up to||&71000 players but only 1 can survive.|| ||&7For upcoming games:||&afreelion.net/uhc/upcoming-matches|| ||&cOFFLINE|| ||&aClick to select server" to close then run [make player execute command "/no"]
+		format slot 20 of player with golden apple named "&a&lUHC Meetup" with lore "&7Quick UHC meetup using random||&7kits and use your skills to be||&7the last one standing.|| ||&e%{players.practice}% players online|| ||&aClick to select server" to close then run [make player execute command "/warp arenapvp"]
+		format slot 22 of player with chest named "&6Vault Battle" with lore "&74 teams rush and fight to||&7raid the other team's Vaults.|| ||&e0 players online|| ||&aClick to select server" to close then run [make player execute command "/no"]
+		format slot 24 of player with golden axe named "&6&lFree For All (FFA)" with lore "&7Free-For-All with different||&7kits to train your PvP skills.|| ||&e%{players.ffa}% players online|| ||&aClick to select server" to close then run [make player execute command "/ffa join"]
+		format slot 30 of player with blue wool named "&6&lCapture the Flag (CTF)" with lore "&74 Teams fight to capture each||&7others flag and be the absolute conqueror|| ||&&cOFFLINE|| ||&aClick to select server" to close then run [make player execute command "/no"]
+		format slot 32 of player with potion of:8193 named "&6&lCubecore" with lore "&7Free-For-All based server||&7with custom kits and koth|| ||&e0 players online|| ||&aClick to connect to server" to close then run [make player execute command "/warp cubecore"]
+		format slot 53 of player with red wool named "&aClose" to close  
+		
+on quit:
+	set quit message to " "
+
+on join:
+	set join message to " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send " "
+	send "&6&lBADLION NEWS"
+	send "&e-Dev Log: Version 0.01"
+	send "&e-Badlion Premium: Gadgets Access"
+	send "&e-Badlion Premium: Arena Pvp early Access"
+	
+command /gm [<player=%player%>]:
+	aliases: gamemode
+	permission: rank.gamemode
+	permission message: &fYou do not have permission to use this command.	
+	trigger:
+		gamemode of player argument is creative:
+			set gamemode of player argument to survival
+			message "&fGamemode Updated!"
+		else:
+			set gamemode of player argument to creative
+			message "&fGamemode Updated!"
+			
+command /clearchat:
+	description: &fClears the chat
+	usage: /clearchat
+	permission: rank.mod
+	permission message: &fYou do not have permission to use this command.	
+	trigger:
+		loop 200 times:
+			broadcast " "
+
+Command /fly:
+	Usage:&fUsage: /Fly
+	Executable by: players
+	Permission: rank.trial
+	permission message: &fYou do not have permission to use this command.
+	Trigger:
+		If {fly.%player%} is not set:
+			Send "&fFlight has been enabled!" to player
+			set player's flight mode to true
+			Set {fly.%player%} to true
+			Stop
+		Send "&fFlight has been disabled!" to player
+		set player's flight mode to false
+		Delete {fly.%player%}
+		Stop
+			
+command /msg <player> <text>:
+	description: &cUsage:/msg [username] [message]
+	usage: &cUsage:/msg [username] [message]
+	executable by: player
+	aliases: /message, /pm, /w, /tell, /t
+	trigger:
+		if arg 1 is player:
+			send "&cYou cannot send a message to yourself!"
+		else:
+			send "&6[&9%player% &6->me] &f%arg 2%" to arg 1
+			send "&6[me -> &9%arg 1%&6] &f%arg 2%" to player
+	
+on join:
+	if player has permission "rank.donator":
+		set {rank.%player%} to "&9Owner"
+	else:
+		set {rank.%player%} to "&fNone"
+every 120 seconds:
+	broadcast "&8[&4Alert&8]&fCheck out our shop and donate for goodies!"
+
+on chat:
+	if player has permission "message.owner":
+		cancel event
+		broadcast "&4[Owner]&9%player%&f: &f%message%"
+		stop
+	
+	if player has permission "message.admin":
+		cancel event
+		broadcast "&4[&4Admin]&9%player%&f: &f%message%"
+		stop
+		
+	if player has permission "message.mod":
+		cancel event
+		broadcast "&8[&cModerator&8] &c%player% &8» &b%message%"
+		stop
+
+	if player has permission "message.default":
+		cancel event
+		broadcast "&9%player%&f: &f%message%"
+		stop
+
+	if player has permission "message.vip":
+		cancel event
+		broadcast "&8[&5VIP&8] &5%player% &8» &a%message%"
+		stop
+
+	if player has permission "message.donator":
+		cancel event
+		broadcast "&8[&6Donator&8] &6%player% &8» &e%message%"
+		stop
+
+	if player has permission "message.dev":
+		cancel event
+		broadcast "&8[&3Developer&8] &3%player% &8» &B&l%message%"
+		stop
+
+			
+command /pluginhider:
+	trigger:
+		if player has permission "no.plugins":
+			message "&fUnknown command. Type /help for help."
+		else:
+			stop
+
+command /pl:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /plugins:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /bukkit:plugins:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /?:
+	aliases: help
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /bukkit:?:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /bukkit:about:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /about:
+	trigger:
+		message "&fPlugins (2): &aBadlionCore&f, &aBuycraft"
+
+command /version:
+	trigger:
+		message "&eServer Is Currently In Beta &cDONATE&e for full release."
+command /skript:
+	trigger:
+		if player has permission "no.plugins":
+			message "&fUnknown command. Type /help for help."
+		else:	
+			stop
+		
+command /skr:
+	trigger:
+		if player has permission "no.plugins":
+			message "&fUnknown command. Type /help for help."
+		else:	
+			stop
+on burn: 
+	cancel event
+on ignition:
+	cancel event
+on explode:
+	cancel event
+
+on pressure plate:
+	if event-block is 148:
+		if block below event-block is Suprce Wood Planks:
+			cancel event
+			make console execute command "launch %player%"
+			push the player upwards at speed {@launch height}
+			push the player forwards at speed {@launch speed}
+			play raw sound "{@sound}" at event-block with pitch {@pitch} volume {@volume}
+			play mobspawner flames at event-block
+			set {launched.%player%} to true
+
+
+on damage:
+	if damage cause is fall:
+		if {launched.%victim%} is true:
+			set {launched.%victim%} to false
+			cancel event
+
+every 1 tick:
+	set {players.lobby} to number of players in world "LionHUB"
+	set {players.uhcmeetup} to number of players in world "MainLobby"
+	set {players.practice} to number of players in world "MainLobby"
+	set {players.ffa} to number of players in world "FFA"
+
+
+		

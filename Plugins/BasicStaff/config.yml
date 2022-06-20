@@ -1,0 +1,37 @@
+#----------------------------#
+#                            #
+# BasicStaff by ImWatchDoge	 #
+#                            #
+#----------------------------#
+
+messages:
+  fly-command:
+    
+    ####/fly####
+    enable-message: '&e&l(!) &7Flight mode enabled!'
+    disable-message: '&e&l(!) &7Flight mode disabled!'
+    noPermission: '&e&l(!) &7You need a permission & 7to get this benefit!'
+  
+  tp-command:
+   
+    usage: '&9&lCommand> &7/Tp <player>,<player> || /Tp <x> <y> <z>'
+    noPermission: '&e&l(!) &7You need &c&lADMIN &7To obtain this benefit!'
+    
+    playerOffline: '&e&l(!) &7This player is not connected to the server!'
+   
+    ### /tp {Player1} ###
+    teleportPlayer1: '&e&l(!) &7&7Teleporting a &9<Player1>&7...' 
+   
+    ### /tp {Player1} {Player2} ### 
+    teleportPlayer2: '&e&l(!) &7Teleporting &9<Player1> &7a &9<Player2>&7...'
+   
+    ### /tp <x> <y> <z> ### 
+    teleportCoordinates: '&e&l(!) &7Teleporting a las cordenadas &9<x> <y> <z>&7...'
+  
+  vanish-command:
+  
+    enable-message: '&e&l(!) &7Vanish mode enabled!'
+    disable-message: '&e&l(!) &7Vanish mode disable!'
+    noPermission: '&e&l(!) &7You need &c&lADMIN &7To obtain this benefit!'
+  
+  message-console: '&e&l(!) &7You need to be on the server to use this command!'

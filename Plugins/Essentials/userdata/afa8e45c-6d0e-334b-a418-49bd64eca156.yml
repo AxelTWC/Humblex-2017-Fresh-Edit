@@ -1,0 +1,21 @@
+timestamps:
+  lastteleport: 1497617557419
+  login: 1497617522370
+  logout: 1497617555791
+lastlocation:
+  world: MainLobby
+  x: 5.09296029549695
+  y: 57.0
+  z: -21.150692309951125
+  yaw: -285.69437
+  pitch: 20.060694
+lastAccountName: AxelTWC
+ipAddress: 192.168.0.108
+logoutlocation:
+  world: LionHUB
+  x: 30.5
+  y: 67.0
+  z: 15.5
+  yaw: 90.11987
+  pitch: -0.34908158
+afk: false

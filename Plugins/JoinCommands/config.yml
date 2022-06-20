@@ -1,0 +1,15 @@
+JoinCommands:
+    - hub
+    - spawn
+
+LeaveCommands:
+    - hub
+    - spawn
+
+ConsoleJoinCommands:
+    - spawn
+    - spawn
+    
+ConsoleLeaveCommands:
+    - spawn
+    - spawn         

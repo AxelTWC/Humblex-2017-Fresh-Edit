@@ -1,0 +1,89 @@
+options:
+	
+	Lobby-Worlds: "MainLobby"
+
+	Practice-Worlds: "lobby_practice"
+	
+	UhcMeetup-Worlds: "UhcMeetup"
+	
+	FFA-Worlds: "FFA"
+
+every 1 second:
+	loop all players in world "lobby_practice":
+		wipe loop-player's sidebar
+		set name of sidebar of loop-player to "&b&lGladiusPvP"
+		set score "&fServer Time" in sidebar of loop-player to 15
+		set score "&6&l %hour%:%minute%:%second%" in sidebar of loop-player to 14
+		set score "&aMatch Time:" in sidebar of loop-player to 13
+		set score "&6&l %minute%:%second%" in sidebar of loop-player to 12
+		set score "&f" in sidebar of loop-player to 11
+		set score "&fKills:" in sidebar of loop-player to 10
+		set score "&a%{kills:%loop-player%}%" in sidebar of loop-player to 9
+		set score "&fDeaths" in sidebar of loop-player to 8
+		set score "&a %{deaths:%loop-player%}%" in sidebar of loop-player to 7
+		set score "&3" in sidebar of loop-player to 6
+		set score "&bTwitter: @GladiusPvP" in sidebar of loop-player to 5
+		
+every 1 second:
+	loop all players in world "MainLobby":
+		wipe loop-player's sidebar
+		set name of sidebar of loop-player to "&b&lGladiusPvP"
+		set score "&aLobby: &f23L" in sidebar of loop-player to 15
+		set score "&6" in sidebar of loop-player to 14
+		set score "&aOnline: &f%number of all players%" in sidebar of loop-player to 13
+		set score "&m" in sidebar of loop-player to 12
+		set score "&aRanked Left: &f100" in sidebar of loop-player to 11
+		set score "&aUnranked Left: &f70" in sidebar of loop-player to 10
+		set score "&b" in sidebar of loop-player to 9
+		set score "&aIn Lobby:&f %{players.lobby}%" in sidebar of loop-player to 8
+		set score "&aIn Game:&f %{players.practice}%" in sidebar of loop-player to 7
+		set score "&1" in sidebar of loop-player to 6
+		set score "&aUhcMeetup:&f %{players.uhcmeetup}%" in sidebar of loop-player to 5
+		set score "&a" in sidebar of loop-player to 4
+		set score "&bTwitter: @GladiusPvP" in sidebar of loop-player to 3
+		
+every 1 second:
+	loop all players in world "UhcMeetup":
+		wipe loop-player's sidebar
+		set name of sidebar of loop-player to "&b&lGladiusPvP"
+		set score "&aYour Kills: &f%{kills:%loop-player%}%" in sidebar of loop-player to 15
+		set score "&e" in sidebar of loop-player to 14
+		set score "&aPlayer Left:&f %{players.uhcmeetup}%" in sidebar of loop-player to 13
+		set score "&aSpectator: 0" in sidebar of loop-player to 12
+		set score "&f" in sidebar of loop-player to 11
+		set score "&aBorder:&f 100" in sidebar of loop-player to 10
+		set score "&c" in sidebar of loop-player to 9
+		set score "&aRating:" in sidebar of loop-player to 8
+		set score "&f[Unranked]" in sidebar of loop-player to 7
+		set score "&aPoints:" in sidebar of loop-player to 6
+		set score "&f N/A" in sidebar of loop-player to 5
+		set score "&0" in sidebar of loop-player to 4
+		set score "&bTwitter: @GladiusPvP" in sidebar of loop-player to 3
+
+every 1 second:
+	loop all players in world "FFA":
+		wipe loop-player's sidebar
+		set name of sidebar of loop-player to "&B&LFFA 2.0"
+		set score "&fServer Time" in sidebar of loop-player to 15
+		set score "&6&l %hour%:%minute%:%second%" in sidebar of loop-player to 14
+		set score "&aMatch Time:" in sidebar of loop-player to 13
+		set score "&6&l %minute%:%second%" in sidebar of loop-player to 12
+		set score "&f" in sidebar of loop-player to 11
+		set score "&AKills: &F%{kills:%loop-player%}%" in sidebar of loop-player to 10
+		set score "&a&L" in sidebar of loop-player to 9
+		set score "&ADeaths:&F %{deaths:%loop-player%}%" in sidebar of loop-player to 8
+		set score "&a" in sidebar of loop-player to 7
+		set score "&AElo: &F%{Elo:%loop-player%}%" in sidebar of loop-player to 6
+		set score "&3" in sidebar of loop-player to 5
+		set score "&bTwitter: @GladiusPvP" in sidebar of loop-player to 4
+		
+On death of player:
+	add 1 to {Kills:%attacker%}
+	add 1 to {deaths:%victim%}
+	add 5 to {elo:%attacker%}
+
+every 1 tick:
+	set {players.lobby} to number of players in world {@Lobby-Worlds}
+	set {players.uhcmeetup} to number of players in world {@UhcMeetup-Worlds}
+	set {players.practice} to number of players in world {@Practice-Worlds}
+	set {players.ffa} to number of players in world {@FFA-Worlds}

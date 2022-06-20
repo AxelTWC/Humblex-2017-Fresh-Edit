@@ -1,0 +1,14 @@
+lobby:
+  world: MainLobby
+  x: 0.7386518013166091
+  y: 60.0
+  z: 0.4765052992511828
+  yaw: 272.62384
+  pitch: 0.67648363
+lobbysethotbar:
+  world: MainLobby
+  x: -109.67178531272637
+  y: 3.0
+  z: 2.300000011920929
+  yaw: 91.89273
+  pitch: 15.153271

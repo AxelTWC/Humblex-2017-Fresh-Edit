@@ -1,0 +1,10 @@
+[
+  {
+    "uuid": "cb5e9ba7-6c8c-4eb1-aa42-4813f1f3b1ab",
+    "name": "Ban",
+    "created": "2016-09-14 13:43:40 +0800",
+    "source": "Skript ban effect",
+    "expires": "forever",
+    "reason": "§cVoce foi Banido deste Servidor \n§eBanido Por: §fFilipeNock \n§eMotivo: §fKillAura/Fly \n§eTempo de Banimento: §fPermanente \n§eData e Hora: §f14/09/16 02:43"
+  }
+]

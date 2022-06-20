@@ -1,0 +1,118 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 3
+npc:
+  '3':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0OTc2MTc1MDI3MzIsInByb2ZpbGVJZCI6IjNmOWE4MDY2NzkxYjQ0MTViMTNiNjFiY2VhYWFkNjQ2IiwicHJvZmlsZU5hbWUiOiJHYXBwbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjNGQ5N2NkYmNjMDhlOTUzMmViZjI1ZjUzM2MzM2JiYzc4NzI2N2FkZWNhNWI5ODc5NTVjYWM5Nzk3NzlkIn19fQ==
+      cached-skin-uuid-name: gapple
+      cached-skin-uuid: 3f9a8066-791b-4415-b13b-61bceaaad646
+      player-skin-name: gapple
+      player-skin-signature: vCnN/RRteDb1dYd8w2JRi5HyiJ5HZ6VtrQWEVQ+/Bbi8SbDuX+qvtlz4n7x+0x88sGO7tjz0RkUY+LfY+orGPpE/7TDlldb7MHo71cIoGXvTQV4H7zL1ntRkTqXD4YCMqDIYzW7Vrix2INtziSb0BVir401AyiWTyQxzYBqf9S0EIN13jKaYUX7kRf9fEOLM7lAqVwMRRL9HUvHJ6UeZThs0gr3qYWdcQCpxYoOiMRdPwR/tnZrVtxD7OMS7zDlPSngQIMfY4yxwNG9o16gaAKl8ZKRf4pJJAA9rHqwXD5tmXKPePfLPFcxAqd2DVzxFkEVGOY2lqFGKp84kJ8XpSI5iPHdpvUsAWdDojWMsNeZ0SaHFm6ILtR6aLGSnXMhNlfQ8z8lFBsBkBQoE0FydVgmAim2w22fCkmPStN703CWXVYUo2EBsNAHw3oVGuGHoNioD0abbAN4Eba/Y7ZNnJEd/VSSt9pm79jmGvl6C0FG2q7afp43FkgYcnCx55UvEXIfW8GhJvlWCMa600MwqRAE3iVjnyoHq62P5wn9gqVtxfIEk3rZ8eD7HaRKCunVc4ekfsP6tWFrmmxIwZtIfACgfzCR2M0nuYiP8k4ejbjTOwFxXeCsk7+IOGihG5xr3h+DsliYrhVcw2UtqLX1ox6zd6GZ6iumH6/siO+abHTs=
+    name: "\xa76\xa7lUHCMEETUP 2.0"
+    uuid: c8b95950-a732-4624-86a3-c8b39db2679f
+    traits:
+      spawned: true
+      location:
+        world: LionHUB
+        x: '14.435716972713184'
+        y: '67.0'
+        z: '10.537342356610212'
+        yaw: '294.5724182128906'
+        pitch: '-4.764446258544922'
+      inventory: {}
+      owner:
+        owner: iLeaksPvP
+        uuid: f4adec5a-0ba8-3e8b-80ff-6c8ee0fd19f1
+    traitnames: inventory,location,type,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0OTc2MTc1MDE0OTQsInByb2ZpbGVJZCI6ImNhMmE1MTcwOTYwNzQwNjViYWEyMWNkNmIyMGNkYmU0IiwicHJvZmlsZU5hbWUiOiJGRkEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QxNGQ1NjU3NDM0NmVlYzkyNzVhYTEzN2MwY2FmMjI5MmQyYjZkM2U1NzE1NTAzNDdjN2I2MDgyN2E3NmE2MzIifX19
+      cached-skin-uuid-name: ffa
+      cached-skin-uuid: ca2a5170-9607-4065-baa2-1cd6b20cdbe4
+      player-skin-signature: jWDD3eFaj4BXby+xkyytaXojP4isUR4GwcnJmHlabsLWYBYEMjfl09t9AuOqD0cl0qIuiPf1myqVMk+LHWbQ4t8HcJwp7iul2hpvb5NSjojuLrWDXs7ioiFq6sZarmqBOOIEpd1Gwx7rmL9aved88CvHv6JzlCj6hijrMSNpBPHGD7HPQXNL+EpeKOZy0OKrHciC+tWAIzEfYHFR3GX+fDWkxt1lUNAS1j2MgrJi2z9p2WOfELIIN6DkpmHReHYIZHYksCaBWGD+jhl60lR2IRKvfYjHWAx8TmzQ/4Oca6tnLQpUYoUrrhtedhMNFazsEOLAKkGAMEWww8iaeiCIdT6CA/hOtosycG8co02Ux2ikGCAMD98pzuu+MvJWJZbU3lyNiqjiIrWM33kcxQrG/eD0vn2+jk4NkNHpr8ihEKXpzYQqM2ctEYRgfTNh/k4B4bdpxlPge09hnc73eR6YvXarGYCFe11Te8JzXU8lU+pykPc2WuW+umWh+h+MjWB3xcwLPhqd4cvFGkgFlxDX4PDF7+IuQSLqhLVh027eoEsGetlYcFSKrGZwLgbI4fH63HEDvoksXurvue16zGbUFWg+RGFTmghIrL94kvX3CA62S828k3sXJ3VcrjayTNR/YwnRpfDvkKgBT99zQUrNb7tw6jz8nlof+sDVAB0rJK4=
+    name: "\xa7e\xa7lFFA"
+    uuid: faa8942f-24fc-407d-bf7c-49ad2617f97b
+    traits:
+      spawned: true
+      location:
+        world: LionHUB
+        x: '13.56215589022208'
+        y: '67.0'
+        z: '12.538566116893827'
+        yaw: '280.77880859375'
+        pitch: '8.821747779846191'
+      inventory: {}
+      owner:
+        owner: iLeaksPvP
+        uuid: f4adec5a-0ba8-3e8b-80ff-6c8ee0fd19f1
+    traitnames: inventory,location,type,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '1':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0OTc2MTc1MDE4MTAsInByb2ZpbGVJZCI6IjYwNzE1Mzg1MmI4YzQ5MDk4MTFmNTA3ZWQ4ZWU3MzdmIiwicHJvZmlsZU5hbWUiOiJDaGVzdCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJjOWI0NTlhNjhkYzIzOTE3Njg1ZWRjYWM3NmZhZWZhYmFjZWMxM2I1NThkMmI0ZWMyNjZmNDk0MTM3YWEifX19
+      cached-skin-uuid-name: chest
+      cached-skin-uuid: 60715385-2b8c-4909-811f-507ed8ee737f
+      player-skin-name: chest
+      player-skin-signature: DzXmjD7R3GLD9e3elkUNvVz6D6k4W78MpdPt3cks+n+txd6If1YyVL6fEMJsP25UWiSH60SnLDbWA9vo2S1sITnbhLYC3YVD0iCc8a1Cem0Nf2DSwxxB7fMdBYITCRWRvKdu/C1U/Icn5vTuRX+bREzS3WFCA6RxJn0ABgHrw41peRI270bQ2ee3VHekGoGRGJfQqDoKIhzqIaIE/o64phOOlkLeZ6chBOkhMraoi0C1cevcTfyearPoc6/edTs3L3AsxFItmDsSeNfThp+O5nILZSyDzmPsAVojYBvbpxy4yGwrk8JXOTm9mhhAxk2pP3Q5WfWDZV+ODhZSYsgZ83eYS/EgxtJUDHBdMvbKkct4Y5vbQj/VvOA8QnN8PYqXKYNo+dHwNF45MfpTmLivrpB1XL6D2WsJvOKY9A2yMC3rsLy2U3g8Y9iqfM/hVVwl+nxKHqduoPxwWIJnuKhHqfvjC5/ASxZXpgGhjdzLDhZvmUp6zqrKjqXFCtsK24BH5HFT4rUHaM4aByGLw1KHw4smaVAPPBGukKR4JzAFXwC3noeSHdVAH1CLmtnjT6UL7f7syVAekqqnPAYXq3QmfES1soLS/MJk9NkzcU1kWUV1wYjqEkDzaJtE2YNA44KyERIQeh33hzUUpDB/THt5ve4EZHGDFvc5dpvCu4M+dvM=
+    name: "\xa7e\xa7lCubeCore"
+    uuid: 63acbe97-20e0-410b-a35f-42620df577e1
+    traits:
+      spawned: true
+      location:
+        world: LionHUB
+        x: '13.449550529711185'
+        y: '67.0'
+        z: '14.509502850740489'
+        yaw: '274.96795654296875'
+        pitch: '3.7268824577331543'
+      inventory: {}
+      owner:
+        owner: iLeaksPvP
+        uuid: f4adec5a-0ba8-3e8b-80ff-6c8ee0fd19f1
+    traitnames: inventory,location,type,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '0':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0OTc2MTc1MDI0MTQsInByb2ZpbGVJZCI6IjE5ZDFmZjkxNmMzYjRhNmI5YWQxYjU2MzE4YWZjN2JmIiwicHJvZmlsZU5hbWUiOiJhcmVuYXB2cCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQxMzg0OWZlMmRlNGE4YmEzZGFlNjFmNDk5Zjc0ZjU1YmNiMzU1OTEyMWJjZGZkOTMyMTdjNWE1MzQ1NWQifX19
+      cached-skin-uuid-name: arenapvp
+      cached-skin-uuid: 19d1ff91-6c3b-4a6b-9ad1-b56318afc7bf
+      player-skin-signature: D4Umoz6vIiOPfiUnX8oRrM1MMWAdA0XPks5wEydcdHI0fNFfzDPKssQNDSrNA1FOMg/X9Pu+zt4arb+lPwFEYw2dyM3FPlPohSO2amfsWqRwLown0ILGc6fp1xqHK5gws5UIwLm1+KgqaVBzN5VhxAJR+8/c43QdeUTmM8nTRe6QQHW9dK+4g83rzFNkkHQoYgt4rcpej2QchQR52qjSaWehdjRui8pb0Q1xL1tgCrf/p/ADBsWBC/ZO6PXF5wFGa79AS+A6wxwkfjBMWyOzAHK+0bwd0HIHLaPHsfJ+mfvb2+O3xU+w/xjozrh9wZBZ07wBcBviZDA9Pd0sET7J4dOpnHAWAH2AcSrSB/MCJnrJg/raSO6gDmKo7KQ1hztUqTtmMmrBS4CinGGWEq2hepub7i9Rkudz+wMEfB1sVrOO5mDmHLkbzHdqIKmoP3H9y1lgNFyI2TYGbFUUtELMVR5CkAz8jnr0TaAxdl29Y+9qnKVCEhuGXaq2L6XaQwog5l8cPLSDqYtPaNGidNK+mU2YNEs1Wjct4SdSf2AogzZolntZctuEyuZq3chEu3fU12TYZt+T1xSiGaeJt24KZKgmyu2bvvYR+FDwnePwDSsKKAN5I5YrWTcIArDJPVJVqY6Ibss6YJKrTkmROxEC81jFVt8nBL6Q8VlDrsBndQw=
+    name: "\xa76\xa7lArenaPvP"
+    uuid: e5f3b373-400d-434a-acde-948c07bd5a8c
+    traits:
+      spawned: true
+      location:
+        world: LionHUB
+        x: '13.358354545634159'
+        y: '67.0'
+        z: '16.52649744205514'
+        yaw: '270.005615234375'
+        pitch: '1.5190541744232178'
+      inventory: {}
+      owner:
+        owner: iLeaksPvP
+        uuid: f4adec5a-0ba8-3e8b-80ff-6c8ee0fd19f1
+    traitnames: inventory,location,type,spawned,owner
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

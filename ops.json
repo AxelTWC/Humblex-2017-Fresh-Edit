@@ -1,0 +1,98 @@
+[
+  {
+    "uuid": "3e380207-5146-35b3-b436-ce04e4b80eb0",
+    "name": "SuchProxy",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "afa8e45c-6d0e-334b-a418-49bd64eca156",
+    "name": "AxelTWC",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a01e3843-e521-3998-958a-f459800e4d11",
+    "name": "Player",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3d36cfc5-3cbc-4dd7-8aff-ab3b68159b3f",
+    "name": "AxelTWC",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "9cfddb37-3b15-3da9-a742-1b6875995ce3",
+    "name": "FilipeNock",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "27fc3b27-a036-3d01-ae73-361e0ce821d1",
+    "name": "iProxyDEV",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "9afe0320-fc24-30dc-8ffc-99dd65e4cc80",
+    "name": "Brun0MasterBR",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f3f9a2cc-0573-315b-995e-4cb05e54f0a8",
+    "name": "iProxiG_PvP",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "970ddb6f-6402-35fd-a5bc-6a6a9ee56a9a",
+    "name": "Hykeh",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f6f55f87-831f-3621-9a26-323337dd6f62",
+    "name": "StrafeCPS",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "37da9755-f6cc-3a4b-8311-4e5429b239e9",
+    "name": "SmexyCPS",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "542fc550-d738-3cc1-af50-acfe43de294f",
+    "name": "iProxyMC",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "545de57e-ffa2-3ee7-ab96-eb47f4c0a565",
+    "name": "ProxyClient",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "c32dab53-46b1-355b-843c-a48511b7f6f6",
+    "name": "xZichMc",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f6a81f11-b776-3a22-a7fa-99b0ac577f0c",
+    "name": "joagames",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f4adec5a-0ba8-3e8b-80ff-6c8ee0fd19f1",
+    "name": "iLeaksPvP",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

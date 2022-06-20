@@ -1,0 +1,66 @@
+info:
+  prefix: '&8(&4&lFAWE&8)&7'
+  schematic_pasting: '&7The schematic is pasting. This cannot be undone.'
+  fix_lighting_selection: '&7Lighting has been fixed in %s0 chunks. (It may take a
+    second for the packets to send)'
+  set_region: '&7Selection set to your current WorldEdit region'
+  worldedit_command_limit: '&7Please wait until your current action completes'
+  worldedit_delayed: '&7Please wait while we process your WorldEdit action...'
+  worldedit_run: '&7Apologies for the delay. Now executing: %s'
+  worldedit_complete: '&7WorldEdit action completed.'
+  require_selection_in_mask: '&7%s of your selection is not within your mask. You
+    can only make edits within allowed regions.'
+  worldedit_volume: '&7You cannot select a volume of %current%. The maximum volume
+    you can modify is %max%.'
+  worldedit_iterations: '&7You cannot iterate %current% times. The maximum number
+    of iterations allowed is %max%.'
+  worldedit_unsafe: '&7Access to that command has been blocked'
+  worldedit_dangerous_worldedit: '&cFAWE processed unsafe WorldEdit at %s0 by %s1'
+  worldedit_bypass: '&7&oTo bypass your restrictions use &c/wea'
+  worldedit_bypassed: '&7Currently bypassing WorldEdit restriction.'
+  worldedit_unmasked: '&6Your WorldEdit is now unrestricted.'
+  worldedit_restricted: '&6Your WorldEdit is now restricted.'
+  worldedit_oom_admin: |-
+    &cPossible options:
+    &8 - &7//fast
+    &8 - &7Do smaller edits
+    &8 - &7Allocate more memory
+    &8 - &7Disable this safeguard
+  compressed: History compressed. Saved ~ %s0b (%s1x smaller)
+  action_complete: Action completed in %s0 seconds
+error:
+  worldedit_extend: '&cYour WorldEdit may have extended outside your allowed region.'
+  command_syntax: '&cUsage: &7%s0'
+  no_perm: '&cYou are lacking the permission node: %s0'
+  schematic_not_found: '&cSchematic not found: &7%s0'
+  no_region: '&cYou have no current WorldEdit region'
+  not_player: '&cYou must be a player to perform this action!'
+  oom: |-
+    &8[&cCritical&8] &cDetected low memory i.e. < 1%. FAWE will take the following actions:
+    &8 - &7Terminate WE block placement
+    &8 - &7Clear WE history
+    &8 - &7Unload non essential chunks
+    &8 - &7Kill entities
+    &8 - &7Garbage collect
+    &cIgnore this if trying to crash server.
+    &7Note: Low memory is likely (but not necessarily) caused by WE
+progress:
+  progress_message: '[ Queue: %s0 | Dispatched: %s1 ]'
+  progress_done: '[ Took: %s0s ]'
+cancel:
+  worldedit_cancel_count: '&cCancelled %s0 edits.'
+  worldedit_cancel_reason: '&cYour WorldEdit action was cancelled:&7 %s0&c.'
+  worldedit_cancel_reason_manual: Manual cancellation
+  worldedit_cancel_reason_low_memory: Low memory
+  worldedit_cancel_reason_max_changes: Too many blocks changed
+  worldedit_cancel_reason_max_checks: Too many block checks
+  worldedit_cancel_reason_max_tiles: Too many blockstates
+  worldedit_cancel_reason_max_entities: Too many entities
+  worldedit_cancel_reason_max_iterations: Max iterations
+  worldedit_cancel_reason_max_fails: Outside allowed region
+  worldedit_failed_load_chunk: '&cSkipped loading chunk: &7%s0;%s1&c. Try increasing
+    chunk-wait.'
+history:
+  loading_clipboard: Loading clipboard from disk, please wait.
+  indexing_history: Indexing %s history objects on disk, please wait.
+  indexing_complete: 'Indexing complete. Took: %s seconds!'

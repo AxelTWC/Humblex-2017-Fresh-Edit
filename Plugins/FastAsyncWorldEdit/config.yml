@@ -1,0 +1,40 @@
+DOCUMENTATION: https://github.com/boy0001/FastAsyncWorldedit/wiki/Configuration
+limits:
+  default:
+    max-changes: 50000000
+    max-checks: 50000000
+    max-iterations: 1000
+    max-entities: 1337
+    max-fails: 50000000
+    max-blockstates: 1337
+region-restrictions: false
+max-memory-percent: 95
+clipboard:
+  delete-after-days: 1
+  use-disk: false
+lighting:
+  async: true
+  fix-all: true
+history:
+  use-disk: false
+  chunk-wait-ms: 100
+  compress: false
+  combine-stages: false
+  delete-after-days: 7
+  delete-on-logout: true
+tick-limiter:
+  items: 50000
+  physics: 500000
+queue:
+  max-wait-ms: 1000
+  progress:
+    display: false
+    interval: 1
+  target-size: 64
+  parallel-threads: 4
+  extra-time-ms: 0
+extent:
+  allowed-plugins: []
+  debug: true
+crash-mitigation: true
+metrics: true
